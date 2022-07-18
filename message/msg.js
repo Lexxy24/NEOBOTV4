@@ -599,7 +599,7 @@ case prefix+'toimg': case prefix+'toimage':
             conn.sendMessage(from, { video: { url: data.nowm }, mimetype: 'video/mp4' }, { quoted: msg })
             })
 	        break
-case prefix+'attp':
+/**case prefix+'attp':
 if (!isNan) return reply(`Example :\n${command} Hai`)
 var cottdek = body.slice(6)
 var atttp = await getBuffer(`https://myselfff.herokuapp.com/docs/random/attp?query=${cottdek}`)
@@ -634,7 +634,7 @@ var textaren =`
 *Baterai :* ${kokgitu.batterai}
 `
 reply(textaren)
-break
+break*/
             case prefix+'ttaudio':
             if (!isNan) return reply('Masukkan Query Link!')
             reply(mess.wait)

@@ -90,7 +90,6 @@ ${J2}${stripkiri}${prefix}listprem${stripknan}
 ${J2}${stripkiri}${prefix}buildpack${stripknan}
 ${J3}
 ${J1} *_CONVERTER/TOOLS_* ${J4}
-${J2}${stripkiri}${prefix}attp${stripknan}
 ${J2}${stripkiri}${prefix}tahta${stripknan}
 ${J2}${stripkiri}${prefix}ssweb${stripknan}
 ${J2}${stripkiri}${prefix}toimg${stripknan}
@@ -159,7 +158,6 @@ ${J2}${stripkiri}${prefix}loker${stripknan}
 ${J2}${stripkiri}${prefix}meme${stripknan}
 ${J2}${stripkiri}${prefix}couple${stripknan}
 ${J2}${stripkiri}${prefix}quotes${stripknan}
-${J2}${stripkiri}${prefix}spekhp${stripknan}
 ${J2}${stripkiri}${prefix}ghstalk${stripknan}
 ${J2}${stripkiri}${prefix}grupwa${stripknan}
 ${J2}${stripkiri}${prefix}ytsearch${stripknan}
