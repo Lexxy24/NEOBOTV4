@@ -149,6 +149,7 @@ ${J1} *_KERANG AJAIB_* ${J4}
 ${J2}${stripkiri}${prefix}rate${stripknan}
 ${J2}${stripkiri}${prefix}apakah${stripknan}
 ${J2}${stripkiri}${prefix}bisakah${stripknan}
+${J2}${stripkiri}${prefix}siapakah${stripknan}
 ${J2}${stripkiri}${prefix}bagaimanakah${stripknan}
 ${J3}
 ${J1} *_SEARCH MENU_* ${J4}

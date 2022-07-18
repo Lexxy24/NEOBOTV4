@@ -28,6 +28,7 @@ const axios = require("axios");
 const hxz = require("hxz-api");
 const hikki = require("hikki-me");
 const maker = require("mumaker");
+const mathjs = require("mathjs");
 const ra = require("ra-api");
 const kotz = require("kotz-api");
 const yts = require("yt-search");
@@ -63,6 +64,8 @@ moment.tz.setDefault("Asia/Jakarta").locale("id");
 module.exports = async(conn, msg, m, setting, store, welcome) => {
 	try {
 		let { ownerNumber, botName, gamewaktu, limitCount } = setting
+
+wm = '© Created By Lexxy Official'
 
 // Message
 
@@ -116,7 +119,7 @@ let { donasibot } = require('./help')
 		const isPremium = isOwner ? true : _prem.checkPremiumUser(sender, premium)
         const isWelcome = isGroup ? welcome.includes(from) ? true : false : false
 
-		const gcounti = setting.gcount
+        const gcounti = setting.gcount
 		const gcount = isPremium ? gcounti.prem : gcounti.user
         const quoted = msg.quoted ? msg.quoted : msg
         const mime = (quoted.msg || quoted).mimetype || ''
@@ -233,6 +236,23 @@ let { donasibot } = require('./help')
  		    }
 		}
 		
+		//MYLexxy
+var buln = ['/01/', '/02/', '/03/', '/04/', '/05/', '/06/', '/07/', '/08/', '/09/', '/10/', '/11/', '/12/'];
+var myHari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+var tgel = new Date();
+var hri = tgel.getDate();
+var bulnh = tgel.getMonth();
+var thisHari = tgel.getDay(),
+    thisDaye = myHari[thisHari];
+var yye = tgel.getYear();
+var syear = (yye < 1000) ? yye + 1900 : yye;
+
+		
+		const jangwak = (hri + '' + buln[bulnh] + '' + syear)
+        const janghar = (thisDaye)
+        const emo = ['❤', '😍', '😘', '💕', '😻', '💑', '👩‍❤‍👩', '👨‍❤‍👨', '💏', '👩‍❤‍💋‍👩', '👨‍❤‍💋‍👨', '🧡', '💛', '💚', '💙', '💜', '🖤', '💔', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '💋', '👩‍❤️‍💋‍👩', '👨‍❤️‍💋‍👨', '👩‍❤️‍👨', '👩‍❤️‍👩', '👨‍❤️‍👨', '👩‍❤️‍💋‍👨', '👬', '👭', '👫', '🥰', '😚', '😙', '👄', '🌹', '😽', '❣️', '❤️', '😀', '😃', '😄', '😁', '😆', '😅', '😂', '🤣', '🙂', '😛', '😝', '😜', '🤪', '🤗', '😺', '😸', '😹', '☺', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👯‍♂️', '👯', '👯‍♀️', '💃', '🕺', '🔥', '⭐️', '✨', '💫', '🎇', '🎆', '🍻', '🥂', '🍾', '🎂', '🍰', '☹', '😣', '😖', '😫', '😩', '😢', '😭', '😞', '😔', '😟', '😕', '😤', '😠', '😥', '😰', '😨', '😿', '😾', '😓', '🙍‍♂', '🙍‍♀', '💔', '🙁', '🥺', '🤕', '☔️', '⛈', '🌩', '🌧,😯', '😦', '😧', '😮', '😲', '🙀', '😱', '🤯', '😳', '❗', '❕', '🤬', '😡', '😠', '🙄', '👿', '😾', '😤', '💢', '👺', '🗯️', '😒', '🥵', '👋']
+        const emojis = emo[Math.floor(Math.random() * (emo.length))]
+        
 		// Functions
 if (!isCmd && isGroup && isAlreadyResponList(from, chats, db_respon_list)) {
     var get_data_respon = getDataResponList(from, chats, db_respon_list)
@@ -632,7 +652,6 @@ break
                 var search = await yts(bcott)
                 var anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 var buf = await getBuffer(anu.thumbnail)
-                console.log(anu)
                 var wm = `® Created By Lexxy Official`
 
 var buttonplayny = [
@@ -966,6 +985,16 @@ break
 				limitAdd(sender, limit)
 				}).catch(() => reply(mess.error.api))
 			    break
+case prefix+'kalkulator': case prefix+'kal': {
+if (!isNan) return reply(`*Example :*\n${prefix}kalkulator 2 * 5\n\n*List Bilangan :*\n•> Kali : *\n•> Bagi : /\n•> Tambah : +\n•> Kurang : -`)
+var qsd = q
+if (typeof mathjs.evaluate(qsd) !== 'number') {
+reply('Error')
+} else {
+reply(`\`\`\`「 Kalkulator 」\`\`\`\n\n*•> Hitung :* ${qsd}\n*•> Hasil :* ${mathjs.evaluate(qsd.replace(/×/g, "*").replace(/x/g, "*").replace(/÷/g, "/"))}`)
+}
+}
+break
 case prefix+'ytsearch':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
 			    if (args.length < 2) return reply(`Kirim perintah ${command} query`)
@@ -1756,6 +1785,13 @@ case prefix+'apakah':
   var ga = bisa[Math.floor(Math.random() * bisa.length)]
   conn.sendMessage(from, { text: `Pertanyaan : ${MyLord}\nJawaban : ${ga}` }, { quoted: msg })
   break
+case prefix+'siapakah':
+  if (!isNan) return reply(`Penggunaan ${command} text\n\nContoh : ${command} pencipta wibu`)
+  var MyLord = body.slice(10)
+  var bisaa = ['Mungkin Bang Lexxy:d','Mungkin Kamu Yak?','Tanya Pak Aji','Tanya Google','Liat YouTube','Download Shoope','Mungkin Termux']
+  var gaa = bisaa[Math.floor(Math.random() * bisaa.length)]
+  conn.sendMessage(from, { text: `Pertanyaan : ${MyLord}\nJawaban : ${gaa}` }, { quoted: msg })
+  break
   case prefix+'bagaimanakah':
   if (!isNan) return m.reply(`Penggunaan ${command} text\n\nContoh : ${command} saya wibu`)
   var MyLord = body.slice(14)
@@ -1777,28 +1813,6 @@ reply(mess.wait)
 var ssweb = await getBuffer(`https://leyscoders-api.herokuapp.com/api/ssweb-hp?url=${MyLord}&apikey=IkyOgiwara`)
 conn.sendMessage(from, {image: ssweb, caption:"Hasil Screnshot!"}, {quoted:msg})
 break
-case prefix+'y':{
-if (!isNan) return reply(`*Contoh* :\n${command} https://vt.tiktok.com/ZSdGcA6MK/?k=1`)
-  reply(mess.wait)
-   const musim_rambutan = await TiktokDownloader(`${q}`).catch(e => {
-   reply('err') 
-} )
-   console.log(musim_rambutan)
-   const musim_duren_v = musim_rambutan.result.nowatermark
-   conn.sendMessage(from, { video: { url: musim_duren_v }, caption: "Done!" }, { quoted: msg })
-   }
-  break
-case prefix+'yoo':{
-if (!isNan) return reply(`*Contoh* :\n${command} https://vt.tiktok.com/ZSdGcA6MK/?k=1`)
-  reply(mess.wait)
-   const musim_rambutan = await TiktokDownloader(`${q}`).catch(e => {
- reply('err') 
-} )
-   console.log(musim_rambutan)
-   const musim_duren_a = musim_rambutan.result.nowatermark
-   conn.sendMessage(from, { audio: { url: musim_duren_a }, mimetype: 'audio/mp4' }, { quoted: msg })
-   }
- break
 // TEXTPRO
 case prefix+'candy': 
 case prefix+'christmas': 
@@ -1922,7 +1936,7 @@ case prefix+'wicker':
              conn.sendMessage(from, { image: { url: anu }, caption: `*© Created By Lexxy Official*` }, { quoted: msg })
              }
              break
-case prefix+'topupff':
+case prefix+'tp1':
 if (!isNan) return reply(`*Example :*\n${command} id|nominal\n\n*Contoh :*\n${command} 239814337|70\n\n_Support Nominal_ :\n5 12 70 140 355 720`)
 
 var res = q
@@ -1932,7 +1946,8 @@ var dmnya = res.split("|")[1]
 reply(mess.wait)
 
 async function topupFreeFire() {
-const makeSession = await hikki.game.topupFreeFire(idnya, dmnya) // support nominal 5 12 70 140 355 720
+const makeSession = await hikki.game.topupFreeFire(idnya, dmnya) 
+
 // console.log(makeSession) if get more property
 
 let nihbos = makeSession.data.paymentName
@@ -1943,7 +1958,7 @@ let jumlahdm = makeSession.data.item.name
 
 var yainj =`
 *TOP UP DIAMOND FREE FIRE*
-🎮 *Game ID : ${idnya}
+🎮 *Game ID : ${idnya}*
 📝 *Nickname : ${nihname}*
 🛒 *Produk : Diamond FF*
 🏷️ *Jumlah : ${jumlahdm}* 💎
@@ -1997,7 +2012,8 @@ break
 case prefix+'mediafire':
 if (!isNan) return reply('Link nya?')
 
-let { mediafireDl } = require('../lib/mediafireDl')
+var { mediafireDl } = require('../lib/mediafireDl')
+
 var linknya = q
 const baby1 = await mediafireDl(linknya)
 var result4 = `*DATA DITEMUKAN*	
@@ -2122,6 +2138,43 @@ case prefix+'addlist':
                 reply(`Sukses update respon list dengan key *${args1}*`)
             }
             break
+case prefix+'topupff':{
+if (!isNan) return reply(`*Example :*\n${command} id\n\n*Contoh :*\n${command} 239814337`)
+let sections = []
+
+var idnya = body.slice(9)
+
+let listmenu = [`tp1 ${idnya}|5`,`tp1 ${idnya}|12`,`tp1 ${idnya}|70`,`tp1 ${idnya}|140`,`tp1 ${idnya}|355`,`tp1 ${idnya}|720`]
+let listmenuu = [`5 DIAMOND 💎`,`12 DIAMOND 💎`,`70 DIAMOND 💎`,`140 DIAMOND 💎`,`355 DIAMOND 💎`,`720 DIAMOND 💎`]
+let lahkokngamok = ['Sistem Proses Otomatis 3-7 Menit']
+let nombor = 1
+
+let startnum = 0
+let startnumm = 0
+for (let x of listmenu) {
+const yy = {title: 'List Diamond Ke ' + nombor++,
+rows: [
+{
+title: `${listmenuu[startnum++]}`,
+description: `${lahkokngamok[startnumm]}`,
+rowId: `${prefix}${x}`
+}
+]
+}
+sections.push(yy)
+}
+const sendm =  conn.sendMessage(
+from, 
+{
+text: `Silahkan Pilih Nominal Diamond Nya`, 
+footer: `® Top Up Free Fire Otomatis`,
+title: `Hai ${pushname} ${ucapanWaktu}`, 
+buttonText: "Click Here", 
+sections,
+mentions:[sender]
+}, { quoted : msg })
+}
+break
 //BATAS CASE
 default:
 			if (!isGroup && isCmd) {
