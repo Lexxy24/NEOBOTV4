@@ -1,0 +1,16 @@
+{
+  "SmBoL1": "ﾒ",
+  "SmBoL2": ">",
+  "ownerNumber": ["6283834558105@s.whatsapp.net"],
+  "ownerName": ["Lexxy Official"],
+  "botName": "Neobot",
+  "sessionName": "session",
+  "pathimg": "./storage/media/neobot.png",
+  "FakeNya": "NEOXY-TEAM ID © 2021",
+  "gamewaktu": 90,
+  "limitCount": 25,
+  "gcount": {
+	"prem": 35,
+	"user": 15
+  }
+}
