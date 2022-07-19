@@ -1,5 +1,5 @@
 # Bot Whatsapp
-## Base Multi Device 
+## Beta Multi Device 
 
 <p align="center">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQMbpnB0PY8P1Ot5I_2-01Xdnhq4xJuctJxQ&usqp=CAU" alt="Neobot-MD" width="200"/>
