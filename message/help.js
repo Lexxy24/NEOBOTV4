@@ -77,6 +77,7 @@ _*•──•──•──•──•──•──•──•*_
 
 ${J1} *_MAIN MENU_* ${J4}
 ${J2}${stripkiri}${prefix}id${stripknan}
+${J2}${stripkiri}${prefix}ping
 ${J2}${stripkiri}${prefix}rules${stripknan}
 ${J2}${stripkiri}${prefix}script${stripknan}
 ${J2}${stripkiri}${prefix}menu${stripknan}
@@ -87,6 +88,9 @@ ${J2}${stripkiri}${prefix}runtime${stripknan}
 ${J2}${stripkiri}${prefix}sewabot${stripknan}
 ${J2}${stripkiri}${prefix}cekprem${stripknan}
 ${J2}${stripkiri}${prefix}listprem${stripknan}
+${J2}${stripkiri}${prefix}botstatus${stripknan}
+${J2}${stripkiri}${prefix}statusbot${stripknan}
+${J2}${stripkiri}${prefix}speedtest${stripknan}
 ${J2}${stripkiri}${prefix}buildpack${stripknan}
 ${J3}
 ${J1} *_CONVERTER/TOOLS_* ${J4}
@@ -129,8 +133,8 @@ ${J2}${stripkiri}${prefix}ceklist${stripknan}
 ${J2}${stripkiri}${prefix}dellist <key>${stripknan}
 ${J2}${stripkiri}${prefix}addlist <key@response>${stripknan}
 ${J2}${stripkiri}${prefix}updatelist <key@response>${stripknan}
-${J2}${stripkiri}${prefix}done <reply produk>${stripknan}
-${J2}${stripkiri}${prefix}proses <reply produk>${stripknan}
+${J2}${stripkiri}${prefix}done <reply pesan>${stripknan}
+${J2}${stripkiri}${prefix}proses <reply pesan>${stripknan}
 ${J3}
 ${J1} *_RANDOM MENU_* ${J4}
 ${J2}${stripkiri}${prefix}quote${stripknan}
@@ -187,7 +191,7 @@ ${J2}${stripkiri}${prefix}buylimit${stripknan}
 ${J2}${stripkiri}${prefix}buyglimit${stripknan}
 ${J2}${stripkiri}${prefix}topbalance${stripknan}
 ${J3}
-${J1} *_AIUEO MENU_* ${J4}
+${J1} *_BALIK KATA_* ${J4}
 ${J2}${stripkiri}${prefix}hilih${stripknan} <text>
 ${J2}${stripkiri}${prefix}halah${stripknan} <text>
 ${J2}${stripkiri}${prefix}huluh${stripknan} <text>
@@ -200,6 +204,8 @@ ${J2}${stripkiri}${prefix}kick${stripknan}
 ${J2}${stripkiri}${prefix}demote${stripknan}
 ${J2}${stripkiri}${prefix}promote${stripknan}
 ${J2}${stripkiri}${prefix}group${stripknan}
+${J2}${stripkiri}${prefix}jadian${stripknan}
+${J2}${stripkiri}${prefix}jodohku${stripknan}
 ${J2}${stripkiri}${prefix}revoke${stripknan}
 ${J2}${stripkiri}${prefix}hidetag${stripknan}
 ${J2}${stripkiri}${prefix}setdesc${stripknan}
@@ -219,28 +225,6 @@ ${J2}${stripkiri}${prefix}setppbot${stripknan}
 ${J2}${stripkiri}${prefix}broadcast${stripknan}
 ${J3}
 ${J1} *_TEXTPRO MENU_* ${J4}
-${J2}${stripkiri}${prefix}maker1${stripknan} <text>
-${J2}${stripkiri}${prefix}maker2${stripknan} <text>
-${J2}${stripkiri}${prefix}maker3${stripknan} <text>
-${J2}${stripkiri}${prefix}maker4${stripknan} <text>
-${J2}${stripkiri}${prefix}maker5${stripknan} <text>
-${J2}${stripkiri}${prefix}maker6${stripknan} <text>
-${J2}${stripkiri}${prefix}maker7${stripknan} <text>
-${J2}${stripkiri}${prefix}maker8${stripknan} <text>
-${J2}${stripkiri}${prefix}maker9${stripknan} <text>
-${J2}${stripkiri}${prefix}maker10${stripknan} <text>
-${J2}${stripkiri}${prefix}maker11${stripknan} <text>
-${J2}${stripkiri}${prefix}maker12${stripknan} <text>
-${J2}${stripkiri}${prefix}maker13${stripknan} <text>
-${J2}${stripkiri}${prefix}maker14${stripknan} <text>
-${J2}${stripkiri}${prefix}maker15${stripknan} <text>
-${J2}${stripkiri}${prefix}maker16${stripknan} <text>
-${J2}${stripkiri}${prefix}maker17${stripknan} <text>
-${J2}${stripkiri}${prefix}maker18${stripknan} <text>
-${J2}${stripkiri}${prefix}maker19${stripknan} <text>
-${J2}${stripkiri}${prefix}maker20${stripknan} <text>
-${J3}
-${J1} *_PHOTOXY MENU_* ${J4}
 ${J2}${stripkiri}${prefix}snow${stripknan} <text>
 ${J2}${stripkiri}${prefix}blood${stripknan} <text>
 ${J2}${stripkiri}${prefix}cloud${stripknan} <text>
