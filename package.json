@@ -1,5 +1,5 @@
 {
-  "name": "BaseMD",
+  "name": "NEOBOTV4",
   "version": "1.0.0",
   "description": "Simple whatsapp bot with multi device.",
   "main": "index.js",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.1",
     "@adiwajshing/keyed-db": "^0.2.4",
+    "@hapi/boom": "^10.0.0",
     "awesome-phonenumber": "^2.64.0",
     "qrcode-terminal": "^0.12.0",
     "axios": "^0.24.0",
@@ -29,6 +30,7 @@
     "g-i-s": "^2.1.6",
     "hxz-api": "^1.0.1",
     "hikki-me": "^2.0.0",
+    "human-readable": "^0.2.1",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
     "kotz-api": "^1.0.0",
