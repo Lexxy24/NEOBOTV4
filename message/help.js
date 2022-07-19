@@ -90,7 +90,6 @@ ${J2}${stripkiri}${prefix}cekprem${stripknan}
 ${J2}${stripkiri}${prefix}listprem${stripknan}
 ${J2}${stripkiri}${prefix}botstatus${stripknan}
 ${J2}${stripkiri}${prefix}statusbot${stripknan}
-${J2}${stripkiri}${prefix}speedtest${stripknan}
 ${J2}${stripkiri}${prefix}buildpack${stripknan}
 ${J3}
 ${J1} *_CONVERTER/TOOLS_* ${J4}
