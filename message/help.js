@@ -77,7 +77,7 @@ _*•──•──•──•──•──•──•──•*_
 
 ${J1} *_MAIN MENU_* ${J4}
 ${J2}${stripkiri}${prefix}id${stripknan}
-${J2}${stripkiri}${prefix}ping
+${J2}${stripkiri}${prefix}ping${stripknan}
 ${J2}${stripkiri}${prefix}rules${stripknan}
 ${J2}${stripkiri}${prefix}script${stripknan}
 ${J2}${stripkiri}${prefix}menu${stripknan}
